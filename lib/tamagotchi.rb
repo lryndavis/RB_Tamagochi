@@ -76,6 +76,6 @@ class Tamagotchi
   define_singleton_method(:time_passes) do
     @@food_level -= 2
     @@sleep_level -= 1
-    @@activity_level -= 1
+    @@activity_level -= 1.00001
   end
 end
