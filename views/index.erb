@@ -1,0 +1,58 @@
+<meta http-equiv="refresh" content="2">
+<div class="wrapper">
+  <div class="tamagotchi">
+    <div class="logo">
+      <img src="Tamagotchi!_logo.gif" />
+    </div>
+    <div class="screen">
+      <h4>Sleep Level:</h4>
+      <% @sleep_level.times do%>
+        <% if @sleep_level.to_i < 10 %>
+          <div class="progress" style="background-color: red"></div>
+        <% elsif @sleep_level.to_i < 50 %>
+          <div class="progress" style="background-color: yellow"></div>
+        <% else %>
+          <div class="progress" style="background-color: green"></div>
+        <% end %>
+      <% end %>
+      <h4>Hunger:</h4>
+      <% @food_level.times do%>
+        <% if @food_level.to_i < 10 %>
+          <div class="progress" style="background-color: red"></div>
+        <% elsif @food_level.to_i < 50 %>
+          <div class="progress" style="background-color: yellow"></div>
+        <% else %>
+          <div class="progress" style="background-color: green"></div>
+        <% end %>
+      <% end %>
+      <h4>Activity Level:</h4>
+      <% @activity_level.times do%>
+        <% if @activity_level.to_i < 10 %>
+          <div class="progress" style="background-color: red"></div>
+        <% elsif @activity_level.to_i < 50 %>
+          <div class="progress" style="background-color: yellow"></div>
+        <% else %>
+          <div class="progress" style="background-color: green"></div>
+        <% end %>
+      <% end %>
+      <h4>Life Status: <%= @is_alive %>
+    </div>
+    <div class="buttons">
+      <form action="/death" method="post">
+        <button class="euthanize" type="submit">Euthanize</button>
+      </form>
+
+      <form action="/feed" method="post">
+        <button type="submit">Feed</button>
+      </form>
+
+      <form action="/play" method="post">
+        <button type="submit">Play</button>
+      </form>
+
+      <form action="/sleep" method="post">
+        <button type="submit">Sleep</button>
+      </form>
+    </div>
+  </div>
+</div>

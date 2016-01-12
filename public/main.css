@@ -1,0 +1,56 @@
+.progress {
+  width: 5px;
+  height: 10px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.wrapper {
+  width: 50vw;
+  height: 65vh;
+  background-color: #eee;
+  padding: 50px;
+  border-radius: 55% 55% 45% 45%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #47D1D1;
+  box-shadow: inset 5px 5px 10px #aeeaea;
+}
+
+.tamagotchi {
+  padding-top: 100px;
+}
+
+.screen {
+  background-color: #dfdfdf;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: inset 5px 5px 10px #666;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons form{
+  display: inline-block;
+  margin: 20px;
+}
+
+.buttons button {
+  height: 40px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #ffe066;
+}
+
+.buttons .euthanize {
+  color: white;
+  background-color: red;
+}
+
+.logo {
+  text-align: center;
+}
