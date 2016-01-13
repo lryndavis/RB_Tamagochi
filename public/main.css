@@ -6,6 +6,10 @@
   display: inline-block;
 }
 
+* {
+  font-family: monospace;
+}
+
 .wrapper {
   width: 50vw;
   height: 65vh;
@@ -40,6 +44,8 @@
 }
 
 .buttons button {
+  font-weight: bold;
+  font-size: 1em;
   height: 40px;
   border-radius: 50%;
   border-style: none;

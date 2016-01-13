@@ -34,18 +34,18 @@ class Tamagotchi
   end
 
   define_singleton_method(:play) do
-    @@activity_level += 50
+    @@activity_level += 5
   end
 
   define_singleton_method(:feed) do
-    @@food_level += 50
+    @@food_level += 5
   end
 
   define_singleton_method(:sleep) do
-    @@sleep_level += 100
+    @@sleep_level += 10
   end
 
-  define_singleton_method(:ressurect) do
+  define_singleton_method(:resurrect) do
     @@is_alive = true
     @@food_level = 100
     @@sleep_level = 100
@@ -76,6 +76,6 @@ class Tamagotchi
   define_singleton_method(:time_passes) do
     @@food_level -= 2
     @@sleep_level -= 1
-    @@activity_level -= 1.00001
+    @@activity_level -= 1
   end
 end
